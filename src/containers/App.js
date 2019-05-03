@@ -12,9 +12,7 @@ const App = () => {
   const [btnClicked, setBtnClicked] = useState(false)
   const exampleReq = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${KEY_ID}`
 
-  useEffect(() => {
-   // getData();
-  })
+
 
   const getData = async () => {
       const res = await fetch(exampleReq)
