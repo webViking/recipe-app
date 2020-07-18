@@ -1,7 +1,7 @@
 import React, {  useState } from 'react';
 import Recipe from '../components/Recipe'
 import './App.scss';
-
+import NotFoundRecipe from "../components/NotFoundRecipe"
 const APP_ID = "cec32440"
 const KEY_ID = "c59329bb7240bf0b4eea84ae6a800708"
 
@@ -33,9 +33,9 @@ const App = () => {
   if (btnClicked) {
     btnHasBeenClicked = (
       <div className="recipies">
-        {recipies.map(recipe => {
-          return <Recipe key={recipe.recipe.label} recipe={recipe} />
-        })}
+        {recipies !== undefined ? recipies.map(recipe=>{
+            return <Recipe key={recipe.recipe.label} recipe={recipe} />
+        }):  <NotFoundRecipe searched = {query}/>}
       </div>
     )
   }else{

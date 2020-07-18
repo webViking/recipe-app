@@ -1,5 +1,5 @@
 # Simple React Recipe App
-Search your favourite recipes
+Search your favourites recipes
 
 
 
@@ -10,9 +10,14 @@ cd app
 npm install 
 npm start
 ```
+or yarn
+```bash
+cd app
+yarn install
+yarn start
+```
 ## Build With
-
- * React
+ * React 16+
  * React Hooks
  * HTTP Request
 

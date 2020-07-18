@@ -2,7 +2,6 @@ import React from 'react'
 import './Recipe.scss'
 const Recipe = (props) => {
   const {label,calories, image, ingredients} = props.recipe.recipe
-  console.log(ingredients)
     return (
       <div className = "recipe">
           <h1>{label}</h1>
